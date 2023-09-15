@@ -8,22 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <h1>Fuel Cost Calculator</h1>
+        <h1>Fuel cost calculator</h1>
         <div class="input-group">
             <label for="totalKm">Total kilometers:</label>
             <input type="number" id="totalKm" placeholder="Enter total km">
         </div>
         <div class="input-group">
-            <label for="consumption">Consumption (L/100km):</label>
-            <input type="number" id="consumption" placeholder="Enter consumption">
+            <label for="consumption">Consumption:</label>
+            <div class="dinput">
+                <input type="number" id="consumption" placeholder="Enter consumption">
+                <button id="unitBtn">L/100km</button>
+            </div>
         </div>
         <div class="input-group">
             <label for="pricePerLiter">Price per liter (€):</label>
             <input type="number" step="0.01" id="pricePerLiter" placeholder="Enter price per liter">
         </div>
-        <button id="calculateBtn">Calculate</button>
         <div class="result">
-            <p>Total cost: <span id="totalCost">0</span> €</p>
+            <button id="calculateBtn">Calculate</button>
+            <!-- <p>Total cost: <span id="totalCost">0</span> €</p> -->
+            <p><span id="totalCost">0</span> €</p>
         </div>
     </div>
     <script src="script.js"></script>
