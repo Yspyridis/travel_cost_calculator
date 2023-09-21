@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -16,6 +17,7 @@ body {
     padding: 40px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 h1 {
@@ -45,7 +47,7 @@ input {
     font-size: smaller;
 }
 
-#consumption {
+#consumption, #consumption_conversion {
     width: 70%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -60,9 +62,12 @@ input {
 
 #unitBtn:hover {
     background-color: #4e6f92;
-
 }
 
+#convertBtn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 .dinput {
     display: flex;

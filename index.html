@@ -28,8 +28,23 @@
             <button id="calculateBtn">Calculate</button>
             <!-- <p>Total cost: <span id="totalCost">0</span> €</p> -->
             <p><span id="totalCost">0</span> €</p>
+        </div>        
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="consumption">Consumption conversion</label>
+            <div class="dinput">
+                <input type="number" id="consumption_conversion" placeholder="Enter consumption in km/L">
+                <button id="convertBtn">Convert</button>
+            </div>
+        </div>
+        <div class="result">
+            <p>L/100km: <span id="convertedConsumption">0</span></p>
         </div>
     </div>
+    
+
     <script src="script.js"></script>
 </body>
 </html>

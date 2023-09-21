@@ -25,4 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter valid numbers for all fields.");
         }
     });
+
+    convertBtn.addEventListener("click", function () {
+        const consumption = parseFloat(document.getElementById("consumption_conversion").value);
+
+        if (!isNaN(consumption)) {
+            const convertedConsumption = 100 / consumption; // Convert km/L to L/100km
+            document.getElementById("convertedConsumption").textContent = convertedConsumption.toFixed(2);
+        } else {
+            alert("Please enter a valid consumption value in km/L.");
+        }
+    });
 });
